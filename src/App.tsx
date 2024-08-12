@@ -3,7 +3,7 @@ import Routing from "./components/layout/Routing";
 // App.tsx
 const App = () => {
   return (
-    <div className="font-Pretendard p-3">
+    <div className="font-Pretendard p-3 text-white">
       <Routing />
     </div>
   );

@@ -6,6 +6,7 @@ import Developer from "../organism/Developer";
 import Footer from "../organism/Footer";
 import Gsap from "../organism/Gsap";
 import Header from "../organism/Header";
+import Main from "../organism/Main";
 import Not from "../organism/Not";
 import Port from "../organism/Port";
 import Search from "../organism/Search";
@@ -34,6 +35,7 @@ const Routing = () => {
           <Route path="/search/:searchId" element={<Search />}></Route>
           <Route path="/*" element={<Not />}></Route>
         </Routes>
+        <Main />
         <Footer />
       </BrowserRouter>
     </>
