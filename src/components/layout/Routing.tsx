@@ -3,7 +3,9 @@ import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import Channel from "../organism/Channel";
 import Developer from "../organism/Developer";
+import Footer from "../organism/Footer";
 import Gsap from "../organism/Gsap";
+import Header from "../organism/Header";
 import Not from "../organism/Not";
 import Port from "../organism/Port";
 import Search from "../organism/Search";
@@ -17,6 +19,7 @@ const Routing = () => {
   return (
     <>
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/today" element={<Today />}></Route>
@@ -31,6 +34,7 @@ const Routing = () => {
           <Route path="/search/:searchId" element={<Search />}></Route>
           <Route path="/*" element={<Not />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
